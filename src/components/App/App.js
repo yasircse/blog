@@ -1,10 +1,17 @@
 import React from 'react';
 import styles from './App.css'
+import Header from '../Header/Header'
+import {BrowserRouter as Router} from 'react-router-dom'
+import Routes from '../Routes/Routes'
+
 const App = () => {
     return (
-        <div>
-            <h1 className={styles.heading}>Articles blog</h1>
-        </div>
+        <Router>
+            <div>
+                <Header />
+                <Routes />
+            </div>
+        </Router>
     );
 };
 
