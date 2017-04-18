@@ -7,6 +7,11 @@ module.exports={
     output:{
         filename:'bundle.js'
     },
+
+    devServer:{
+        historyApiFallback:true
+    },
+    
     module:{
         rules:[{
             test:/\.js$/,
