@@ -1,9 +1,9 @@
 import React from 'react';
-
-const PostDetails = () => {
+import Post from '../Post/Post'
+const PostDetails = (props) => {
     return (
         <div>
-            <h1>Post Details</h1>
+          <Post {...props.post}/>
         </div>
     );
 };

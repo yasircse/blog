@@ -9,7 +9,9 @@ const App = () => {
         <Router>
             <div>
                 <Header />
-                <Routes />
+                <div className={styles.container}>
+                  <Routes />  
+                </div>
             </div>
         </Router>
     );

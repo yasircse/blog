@@ -7,7 +7,7 @@
     justify-content: space-between;
     max-width: var(--site-width);
     margin:0 auto;
-    
+   
 }
 
 .title {
@@ -37,5 +37,5 @@
 
 .link:focus,
 .link:hover {
-  color: #24A3CF;
+  color: greenyellow;
 }

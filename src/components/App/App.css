@@ -1,3 +1,4 @@
-.heading {
-    color:red;
+.container {
+  max-width: var(--site-width);
+  margin: 0 auto;
 }

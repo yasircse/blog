@@ -1,10 +1,12 @@
 import React from 'react';
+import styles from './Post.css'
+import {Link} from 'react-router-dom'
 
-const Post = () => {
+const Post = (props) => {
     return (
-        <div>
-          <h1>Post 1</h1>
-          <p>This is the dummy content for this post. Since there is not initial setup done to the blog content therefore we have gone for such approach </p>  
+        <div className={styles.card}>
+          <h2 className={styles.title}>{props.titleLink ? <Link className={styles.link} to={`/post/${props.id}`}>{props.title}</Link>:props.title}</h2>
+          <p className={styles.content}>{props.excerpt}</p>  
         </div>
     );
 };
