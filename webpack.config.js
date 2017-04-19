@@ -11,6 +11,11 @@ module.exports={
     devServer:{
         historyApiFallback: true
     },
+
+    devServer:{
+        historyApiFallback:true
+    },
+    
     module:{
         rules:[{
             test:/\.js$/,
